@@ -1,4 +1,29 @@
-// ============================================================================
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
+#include <locale.h>
+
+#define MAX_STRING 50
+#define MAX_TERRITORIOS 30
+#define MAX_RANDOM 100
+
+typedef struct{
+
+}Mundo;
+
+typedef struct{
+
+}Tropa;
+
+typedef struct{
+
+}Territorio;
+
+
+
+
+//============================================================================
 //         PROJETO WAR ESTRUTURADO - DESAFIO DE CÓDIGO
 // ============================================================================
 //        
@@ -33,8 +58,8 @@
 // Função principal que orquestra o fluxo do jogo, chamando as outras funções em ordem.
 int main() {
     // 1. Configuração Inicial (Setup):
-    // - Define o locale para português.
-    // - Inicializa a semente para geração de números aleatórios com base no tempo atual.
+    setlocale(LC_ALL,  "pt_PT.UTF-8");    // - Define o locale para português.
+    srand((unsigned)time(NULL));          // - Inicializa a semente para geração de números aleatórios com base no tempo atual.
     // - Aloca a memória para o mapa do mundo e verifica se a alocação foi bem-sucedida.
     // - Preenche os territórios com seus dados iniciais (tropas, donos, etc.).
     // - Define a cor do jogador e sorteia sua missão secreta.
