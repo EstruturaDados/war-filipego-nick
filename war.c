@@ -81,7 +81,7 @@ int main() {
 
 // --- Implementação das Funções ---
 
-// alocarMapa():
+Territorio* alocarMapa():
 // Aloca dinamicamente a memória para o vetor de territórios usando calloc.
 // Retorna um ponteiro para a memória alocada ou NULL em caso de falha.
 
